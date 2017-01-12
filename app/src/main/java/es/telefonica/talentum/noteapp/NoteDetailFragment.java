@@ -54,14 +54,46 @@ public class NoteDetailFragment extends Fragment {
         loadAllDataFromDisk();
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.remove("NOTE_TITLE");
+        editor.remove("NOTE_DESCRIPTION");
+        editor.apply();
+    }
+
     private void loadAllDataFromDisk() {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
         String noteTitle = preferences.getString("NOTE TITLE", "");
         String noteDescription = preferences.getString("NOTE_DESCRIPTION", "");
 
+        titleText.setText(noteTitle);
+        descriptionText.setText(noteDescription);
+
+
+
+
     }
 
     private void saveAllDataToDisk() {
+        // abro el fichero,
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        SharedPreferences.Editor editor = preferences.edit();
+
+        // leo lo que has escrito en pantalla
+        String title = titleText.getText().toString();
+        String description = descriptionText.getText().toString();
+
+
+        // grabo eso en el fichero
+        editor.putString("NOTE TITLE", title);
+        editor.putString("NOTE_DESCRIPTION", description);
+
+        editor.apply();
 
     }
 }
