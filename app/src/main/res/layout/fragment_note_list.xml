@@ -5,4 +5,4 @@
     tools:context="es.telefonica.talentum.noteapp.NoteListFragment"
     android:background="@android:color/holo_blue_light">
 
-</FrameLayout>
+    </FrameLayout>
