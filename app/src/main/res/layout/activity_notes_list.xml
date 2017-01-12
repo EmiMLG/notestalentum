@@ -14,6 +14,7 @@
         android:name="es.telefonica.talentum.noteapp.NoteListFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout="@layout/fragment_note_list"/>
+        tools:layout="@layout/fragment_note_list"
+        />
 
 </RelativeLayout>
