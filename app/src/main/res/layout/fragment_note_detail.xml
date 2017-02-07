@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="es.telefonica.talentum.noteapp.NoteDetailFragment"
+    tools:context="es.telefonica.talentum.noteapp.fragments.NoteDetailFragment"
     android:padding="7dp"
     android:background="@android:color/holo_orange_dark">
 

@@ -1,4 +1,4 @@
-package es.telefonica.talentum.noteapp;
+package es.telefonica.talentum.noteapp.fragments;
 
 
 import android.content.SharedPreferences;
@@ -9,6 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+
+import es.telefonica.talentum.noteapp.R;
+import es.telefonica.talentum.noteapp.model.Note;
 
 
 /**
@@ -95,5 +98,13 @@ public class NoteDetailFragment extends Fragment {
 
         editor.apply();
 
+    }
+
+    public Note getNote() {
+        Note note = new Note();
+        note.setTitle(titleText.getText().toString());
+        note.setText(descriptionText.getText().toString());
+
+        return note;
     }
 }

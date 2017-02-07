@@ -1,9 +1,10 @@
-package es.telefonica.talentum.noteapp;
+package es.telefonica.talentum.noteapp.views;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
+import es.telefonica.talentum.noteapp.R;
 import es.telefonica.talentum.noteapp.model.Note;
 
 public class NoteRowViewHolder extends RecyclerView.ViewHolder {

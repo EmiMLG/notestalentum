@@ -4,15 +4,12 @@
     android:id="@+id/activity_notes_list"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="es.telefonica.talentum.noteapp.NotesListActivity">
+    android:padding="0dp"
+    tools:context="es.telefonica.talentum.noteapp.activities.NotesListActivity">
 
     <fragment
         android:id="@+id/fragment_notes_list"
-        android:name="es.telefonica.talentum.noteapp.NoteListFragment"
+        android:name="es.telefonica.talentum.noteapp.fragments.NoteListFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout="@layout/fragment_note_list"

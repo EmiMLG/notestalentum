@@ -1,4 +1,4 @@
-package es.telefonica.talentum.noteapp;
+package es.telefonica.talentum.noteapp.adapters;
 
 
 import android.content.Context;
@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import es.telefonica.talentum.noteapp.views.NoteRowViewHolder;
+import es.telefonica.talentum.noteapp.R;
 import es.telefonica.talentum.noteapp.model.Note;
 import es.telefonica.talentum.noteapp.model.Notes;
 
